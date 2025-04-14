@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vellora</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f6f6f6;
+      color: #333;
+    }
+
+    header {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .product-card:hover {
+      transform: scale(1.02);
+    }
+
+    .product-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover; /* Wyrównuje rozmiar zdjęcia */
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-title {
+      font-size: 18px;
+      margin: 10px 0 5px;
+    }
+
+    .price {
+      font-size: 16px;
+      color: #27ae60;
+    }
+
+    .price del {
+      color: #999;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  VELLORA
+</header>
+
+<div class="product-grid">
+  <!-- Produkt 1 -->
+  <a class="product-card" href="black-cat.html">
+    <img class="product-img" src="https://static.nike.com/a/images/w_1280,q_auto,f_auto/8975a7a6-c52b-4e4e-b2f7-76a660679b50/air-jordan-iv-black-cat-release-date.jpg" alt="Jordan 4 Black Cat">
+    <div class="product-info">
+      <div class="product-title">Jordan 4 "Black Cat"</div>
+      <div class="price"><del>49,99 zł</del> 29,99 zł</div>
+    </div>
+  </a>
+
+  <!-- Produkt 2 -->
+  <a class="product-card" href="yellow-turner.html">
+    <img class="product-img" src="https://owcastore.pl/wp-content/uploads/2023/05/2-34.png" alt="Jordan 4 Yellow Turner">
+    <div class="product-info">
+      <div class="product-title">Jordan 4 "Yellow Turner"</div>
+      <div class="price"><del>49,99 zł</del> 29,99 zł</div>
+    </div>
+  </a>
+</div>
+
+</body>
+</html>
